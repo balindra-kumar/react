@@ -1,0 +1,13 @@
+reload or refresh child component
+=================================
+step 1 = go to parent component
+---------------------------------
+   //Reload data to child component
+   const [refreshKey, setRefreshKey] = useState(0);
+   setRefreshKey((prevKey) => prevKey + 1);
+
+
+
+step 2 child component tag 
+ -------------------------
+ <MenuRUD key={refreshKey} />

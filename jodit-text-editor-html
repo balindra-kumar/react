@@ -1,0 +1,20 @@
+Jodi text Editor Html
+--------------------
+Jodit Text Editor Install 
+—--------------------------------
+Step 1 = Npm install jodit-react
+
+Step 2 = import React, { useState, useRef, useMemo } from 'react';
+import JoditEditor from 'jodit-react';
+
+Step 3 =   const editor = useRef(null);
+	const [content, setContent] = useState('');
+
+Step 4 = <div className='form-group'>
+                                    <label className='font-semibold'>Post Description</label>
+                                    <JoditEditor ref={editor} 
+                                    value={content}
+                                    style={{'min-height':'350px'}}
+                                    onChange={newContent=>setContent(newContent )}
+                                    className='form-control' />
+                                </div>
